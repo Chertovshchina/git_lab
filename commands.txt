@@ -1,0 +1,100 @@
+    1  git --version
+    2  git config --global user.name "Николай"
+    3  git config --global user.email "nikolairozum@gmail.com"
+    4  git config --list
+    5  git status
+    6  git init
+    7  git status
+    8  rm -rf .git
+    9  mkdir git_lab
+   10  cd git_lab
+   11  git init
+   12  git status
+   13  echo "Первая версия файла" > notes.txt
+   14  git status
+   15  git add notes.txt
+   16  git status
+   17  git config --list
+   18  mkdir git_lab
+   19  cd git_lab
+   20  git init
+   21  git status
+   22  cd ..
+   23  rm -rf git_lab
+   24  ls
+   25  mkdir git_lab
+   26  cd git_lab
+   27  git init
+   28  git status
+   29  echo Первая версия файла > notes.txt
+   30  git status
+   31  git add notes.txt
+   32  git status
+   33  git commit -m "Добавлен файл notes.txt"
+   34  git log
+   35  git log --oneline
+   36  notepad notes.txt
+   37  git status
+   38  git diff
+   39  git add notes.txt
+   40  git diff --staged
+   41  git commit -m "Добавлены новые строки"
+   42  notepad notes.txt
+   43  git status
+   44  git add notes.txt
+   45  git commit -m "Добавлена четвёртая строка"
+   46  notepad notes.txt
+   47  git add notes.txt
+   48  git commit -m "Добавлена пятая строка"
+   49  notepad notes.txt
+   50  git add notes.txt
+   51  git commit -m "Добавлена шестая строка"
+   52  git log --oneline
+   53  git switch -c experiment
+   54  echo Эксперимент > experiment.txt
+   55  git add experiment.txt
+   56  git commit -m "Добавлен экспериментальный файл"
+   57  git switch main
+   58  dir
+   59  git switch master
+   60  dir
+   61  git branch
+   62  git switch master
+   63  git branch
+   64  dir
+   65  git merge experiment
+   66  dir
+   67  git log --oneline --all
+   68  notepad notes.txt
+   69  git status
+   70  git diff
+   71  git restore notes.txt
+   72  git status
+   73  notepad notes.txt
+   74  notepad notes.txt
+   75  notepad notes.txt
+   76  git status
+   77  git add notes.txt
+   78  git status
+   79  git restore --staged notes.txt
+   80  git status
+   81  git diff
+   82  git restore notes.txt
+   83  notepad notes.txt
+   84  git add notes.txt
+   85  git commit -m "Экспериментальное изменение"
+   86  git log --oneline
+   87  git revert 887fe7e
+   88  git log --oneline
+   89  git status
+   90  git log --oneline
+   91  cd ~/git_lab
+   92  git status
+   93  git remote add origin https://github.com/Chertovshchina/git_lab.git
+   94  git remote -v
+   95  git push -u origin master
+   96  git branch -a
+   97  git log --oneline --all
+   98  git push -u origin experiment
+   99  history
+  100  history > commands.txt
